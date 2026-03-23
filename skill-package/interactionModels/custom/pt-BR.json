@@ -12,6 +12,8 @@
             }
           ],
           "samples": [
+            "me testa ingles",
+            "testa meu ingles",
             "comecar quiz",
             "iniciar treino",
             "quero jogar",
@@ -59,7 +61,7 @@
             "minha resposta e {userAnswer}",
             "seria {userAnswer}",
             "resposta {userAnswer}",
-            "{userAnswer}"
+            "eu respondo {userAnswer}"
           ]
         },
         {
@@ -69,7 +71,7 @@
             "repete",
             "repete a pergunta",
             "fale de novo",
-            "nao entendi, repete",
+            "nao entendi repete",
             "qual era mesmo",
             "pode repetir"
           ]

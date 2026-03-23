@@ -54,7 +54,9 @@ const SessionEndedRequestHandler = {
     return Alexa.getRequestType(handlerInput.requestEnvelope) === 'SessionEndedRequest';
   },
   handle(handlerInput) {
-    console.log(`Sessao encerrada: ${JSON.stringify(handlerInput.requestEnvelope)}`);
+    const request = handlerInput.requestEnvelope.request || {};
+    console.log(`Sessao encerrada. reason=${request.reason || 'UNKNOWN'} errorType=${request.error && request.error.type ? request.error.type : 'NONE'} errorMessage=${request.error && request.error.message ? request.error.message : 'NONE'}`);
+    console.log(`Sessao encerrada payload: ${JSON.stringify(handlerInput.requestEnvelope)}`);
     return handlerInput.responseBuilder.getResponse();
   },
 };
