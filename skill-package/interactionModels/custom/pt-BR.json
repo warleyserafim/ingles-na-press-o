@@ -1,0 +1,181 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ingles na pressao",
+      "intents": [
+        {
+          "name": "StartQuizIntent",
+          "slots": [
+            {
+              "name": "modeType",
+              "type": "MODE_TYPE"
+            }
+          ],
+          "samples": [
+            "comecar quiz",
+            "iniciar treino",
+            "quero jogar",
+            "vamos treinar",
+            "iniciar",
+            "comecar {modeType}",
+            "iniciar no modo {modeType}",
+            "quero começar no modo {modeType}",
+            "comecar rodada",
+            "bora para o quiz"
+          ]
+        },
+        {
+          "name": "ChooseModeIntent",
+          "slots": [
+            {
+              "name": "modeType",
+              "type": "MODE_TYPE"
+            }
+          ],
+          "samples": [
+            "modo {modeType}",
+            "quero o modo {modeType}",
+            "escolho {modeType}",
+            "vamos de {modeType}",
+            "mudar para {modeType}",
+            "trocar para {modeType}",
+            "eu quero {modeType}",
+            "pode ser {modeType}",
+            "selecionar {modeType}"
+          ]
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "userAnswer",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "a resposta e {userAnswer}",
+            "eu diria {userAnswer}",
+            "eu acho que e {userAnswer}",
+            "minha resposta e {userAnswer}",
+            "seria {userAnswer}",
+            "resposta {userAnswer}",
+            "{userAnswer}"
+          ]
+        },
+        {
+          "name": "RepeatQuestionIntent",
+          "samples": [
+            "repetir",
+            "repete",
+            "repete a pergunta",
+            "fale de novo",
+            "nao entendi, repete",
+            "qual era mesmo",
+            "pode repetir"
+          ]
+        },
+        {
+          "name": "NextQuestionIntent",
+          "samples": [
+            "proxima",
+            "pular",
+            "pode pular",
+            "quero a proxima",
+            "vai para a proxima",
+            "avancar",
+            "nova pergunta"
+          ]
+        },
+        {
+          "name": "ScoreIntent",
+          "samples": [
+            "pontuacao",
+            "qual meu score",
+            "como esta minha pontuacao",
+            "quantos pontos eu tenho",
+            "placar",
+            "meu resultado"
+          ]
+        },
+        {
+          "name": "HelpIntent",
+          "samples": [
+            "ajuda",
+            "como funciona",
+            "o que eu posso dizer",
+            "me explica",
+            "quais sao os modos",
+            "socorro"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "MODE_TYPE",
+          "values": [
+            {
+              "name": {
+                "value": "traducao",
+                "synonyms": [
+                  "modo traducao",
+                  "tradução",
+                  "traduzir"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "situacao real",
+                "synonyms": [
+                  "situação real",
+                  "situacao",
+                  "cenario",
+                  "modo situacao"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "desafio",
+                "synonyms": [
+                  "desafio de cinco perguntas",
+                  "desafio de 5 perguntas",
+                  "modo desafio",
+                  "cinco perguntas"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
