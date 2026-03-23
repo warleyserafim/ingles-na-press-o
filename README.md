@@ -5,7 +5,7 @@ Skill Alexa Custom em pt-BR para microtreinos de ingles por voz, com foco em ses
 ## Visao geral
 
 - Nome: Ingles na Pressao
-- Invocation name: `ingles na pressao`
+- Invocation name: `ingles de bolso`
 - Stack: Alexa Skills Kit SDK v2 (Node.js)
 - Estilo: quiz interativo, sem login e sem banco externo
 - Estado: session attributes (memoria de sessao da Alexa)
@@ -160,7 +160,7 @@ Arquivo: `lambda/src/data/questions.js`
 
 ### 15 frases de teste sugeridas
 
-1. `abrir ingles na pressao`
+1. `abrir ingles de bolso`
 2. `comecar quiz`
 3. `modo traducao`
 4. `i am hungry`
