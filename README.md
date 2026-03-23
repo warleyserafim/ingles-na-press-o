@@ -151,6 +151,18 @@ Arquivo: `lambda/src/data/questions.js`
 3. Apos importar, revise o interaction model e faça **Build Model**.
 4. Execute deploy da lambda Alexa-hosted.
 
+### Resolucao do erro "Your skill name cannot be used as an invocation name"
+
+Se receber este erro no console durante a criacao/importacao:
+
+1. Acesse **Build > Invocation Name** (ou **Build** na secao Language Model).
+2. Limpe o campo e digite exatamente: `ingles de bolso`.
+3. Clique **Save**.
+4. Execute **Build Model**.
+5. Pronto! O erro desapareceera.
+
+**Motivo**: O console pode gerar um invocation name padrao baseado no nome exibido da skill. Sempre certifique-se de que invocation name (como chamam Alexa) e skill name (nome exibido) sao diferentes.
+
 ## Teste no Alexa Simulator
 
 1. Abra a skill no Developer Console.

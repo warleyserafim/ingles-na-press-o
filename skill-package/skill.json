@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "name": "Ingles na Pressao",
+  "description": "Skill Alexa Custom para microtreinos de ingles por voz em pt-BR",
+  "type": "custom",
+  "keywords": [
+    "ingles",
+    "treino",
+    "voz",
+    "quiz",
+    "gamificacao"
+  ],
+  "dist": {
+    "targetEndpoints": {
+      "default": {
+        "apiRegion": "default",
+        "handler": "index.handler"
+      }
+    }
+  }
+}
